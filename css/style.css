@@ -8,3 +8,12 @@
 body{
     background: var(--color-primary);
 }
+.content{
+    width: 600px;
+    height: 600px;
+    margin: 15px auto;
+    background: var(--color-segundario);
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    box-shadow: var(--color-shadows);
+}
