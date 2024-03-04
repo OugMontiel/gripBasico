@@ -9,11 +9,59 @@ body{
     background: var(--color-primary);
 }
 .content{
-    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    /* grid-auto-rows: .5fr; */
+    grid-gap: 8px;
+
+    width: 800px;
     height: 600px;
     margin: 15px auto;
-    background: var(--color-segundario);
     border: 1px solid var(--color-primary);
     border-radius: 5px;
     box-shadow: var(--color-shadows);
+}
+.content div{
+    background:var(--color-segundario)
+}
+.item_1{
+    background: blue;
+    grid-area: 1/1/2/13;
+}
+.item_2{
+    background: green;
+    grid-area: 2/1/4/5;
+}
+.item_3{
+    background: whitesmoke;
+    grid-area: 2/5/7/11;
+}
+.item_4{
+    background: navy;
+    grid-area: 2/11/5/13;
+}
+.item_5{
+    background: pink;
+    grid-area: 4/1/7/5;
+}
+.item_6{
+    background: navajowhite;
+    grid-area: 5/11/7/13;
+}
+.item_7{
+    background: gold;
+    grid-area: 7/1/10/6;
+}
+.item_8{
+    background: lawngreen;
+    grid-area: 7/6/10/13;
+}
+@media (width < 600px){
+    .content{
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        background: #8b0b0b;
+    }
 }
