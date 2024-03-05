@@ -1,5 +1,8 @@
 :root{
-    --color-primary: #c9bca8;
-    --color-segundario: #fff;
+    --color-fondo:#efefef;
+    --color-primary: #fff;
+    --color-one: #87d8f9;
+    --color-two:#d7f065;
+    --color-three: #aef7ae;
     --color-shadows: 3px 3px 5px rgba(0,0,0,0.275);
 }
